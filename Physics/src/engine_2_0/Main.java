@@ -23,7 +23,9 @@ public class Main {
 		dim = 100;
 		
 //		HexGrid grid = createGrid(6*dim, 10*dim, 6*dim);
-		HexGrid grid = createSphere(200, 200, 200);
+		//HexGrid grid = createSphere(200, 200, 200);
+		HexGrid grid = createHexClusters(200, 200, 200);
+		
 		HexGridHelper helper = new HexGridHelper(grid);
 		
 		
@@ -93,8 +95,8 @@ public class Main {
 		int kx = 1;
 		int ky = 1;
 		int kz = dz/2 - 1;
-		int radius = 5;
-		int dist = 40;
+		int radius = 17;
+		int dist = 51;
 		Point p;
 		grid.radiusA = 2000;
 		grid.radiusB = 2000;
